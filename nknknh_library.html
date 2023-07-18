@@ -14577,7 +14577,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
@@ -14637,7 +14637,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">deque</span>
-<span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">math</span><span class="o">,</span> <span class="nn">bisect</span><span class="o">,</span> <span class="nn">heapq</span>
+<span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">math</span><span class="o">,</span> <span class="nn">bisect</span><span class="o">,</span> <span class="nn">heapq</span><span class="o">,</span> <span class="nn">string</span><span class="o">,</span> <span class="nn">copy</span>
 
 <span class="c1"># int input</span>
 <span class="n">ii</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
@@ -14669,6 +14669,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="n">no</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;no&quot;</span><span class="p">)</span>
 
 <span class="n">INF</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">**</span> <span class="mi">18</span>
+
+<span class="c1">#################################################################</span>
 </pre></div>
 
      </div>
@@ -14781,7 +14783,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">deque</span>
-<span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">math</span><span class="o">,</span> <span class="nn">bisect</span><span class="o">,</span> <span class="nn">heapq</span>
+<span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">math</span><span class="o">,</span> <span class="nn">bisect</span><span class="o">,</span> <span class="nn">heapq</span><span class="o">,</span> <span class="nn">string</span><span class="o">,</span> <span class="nn">copy</span>
 </pre></div>
 
      </div>
@@ -15869,17 +15871,132 @@ B upper
 </ul>
 </li>
 </ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>float("inf")は重い。<code>INF = 10 ** 18</code> などを利用した方がいい<ul>
 <li>参考は<a href="https://qiita.com/c-yan/items/dbf2838cdd89864ef5ac">こちら</a></li>
 </ul>
 </li>
 </ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li><a href="https://qiita.com/shoji9x9/items/e7d19bd6f54e960f46be">Python 高速化 Tips</a></li>
 </ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>list より tuple の方が高速</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><code>functools</code>の<code>cmp_to_key</code>を用いると，<code>sorted</code>関数の<code>key</code>で任意の比較関数を指定することができる. 比較する要素が複数あるときや，実数で比較すると誤差が生じるときなどに有用．<ul>
+<li>参考サイトは<a href="https://qiita.com/norioc/items/cb533d009aa63453df40">こちら</a></li>
+<li>例題<ul>
+<li><a href="https://atcoder.jp/contests/abc308/tasks/abc308_c">ABC308</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">cmp_to_key</span>
+<span class="k">def</span> <span class="nf">cmp</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+    <span class="c1"># ここにAとBの比較を書く</span>
+    <span class="c1"># A &lt; Bであればreturn -1</span>
+    <span class="c1"># A == Bであればreturn 0</span>
+    <span class="c1"># A &gt; Bであればreturn 1</span>
+<span class="n">L_new</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">cmp_to_key</span><span class="p">(</span><span class="n">cmp</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><p>浅いコピーと深いコピー</p>
+<ul>
+<li><p>浅いコピー <code>copy.copy()</code></p>
+<ul>
+<li><p>コピー元のオブジェクトとコピー先のオブジェクトが共通して持っている要素に変更を加えた時は，その変更は双方に影響を及ぼす．</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">copy</span>
+<span class="n">old_list</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
+<span class="n">new_list</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">old_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;oldリスト(id:</span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">old_list</span><span class="p">)</span><span class="si">}</span><span class="s1">)：</span><span class="si">{</span><span class="n">old_list</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;newリスト(id:</span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">new_list</span><span class="p">)</span><span class="si">}</span><span class="s1">)：</span><span class="si">{</span><span class="n">new_list</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="c1"># oldリスト(id:2644984766656)：[[1, 2, 3], [4, 5, 6], [7, 8, 9]]</span>
+<span class="c1"># newリスト(id:2644984754048)：[[1, 2, 3], [4, 5, 6], [7, 8, 9]]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;oldリストの0番目の要素(id:</span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">old_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="si">}</span><span class="s1">)：</span><span class="si">{</span><span class="n">old_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;newリストの0番目の要素(id:</span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">new_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="si">}</span><span class="s1">)：</span><span class="si">{</span><span class="n">new_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="c1"># oldリストの0番目の要素(id:2644984756800)：[1, 2, 3]</span>
+<span class="c1"># newリストの0番目の要素(id:2644984756800)：[1, 2, 3]</span>
+</pre></div>
+</li>
+</ul>
+</li>
+<li><p>深いコピー <code>copy.deepcopy()</code></p>
+<ul>
+<li><p>一方のいかなる変更も，他方には全く影響を与えない完全に別物のオブジェクトを作ることができ．</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">copy</span>
+<span class="n">old_list</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
+<span class="n">new_list</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">old_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;oldリスト(id:</span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">old_list</span><span class="p">)</span><span class="si">}</span><span class="s1">)：</span><span class="si">{</span><span class="n">old_list</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;newリスト(id:</span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">new_list</span><span class="p">)</span><span class="si">}</span><span class="s1">)：</span><span class="si">{</span><span class="n">new_list</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="c1"># oldリスト(id:2644984747264)：[[1, 2, 3], [4, 5, 6], [7, 8, 9]]</span>
+<span class="c1"># newリスト(id:2644984707136)：[[1, 2, 3], [4, 5, 6], [7, 8, 9]]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;oldリストの0番目の要素(id:</span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">old_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="si">}</span><span class="s1">)：</span><span class="si">{</span><span class="n">old_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;newリストの0番目の要素(id:</span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">new_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="si">}</span><span class="s1">)：</span><span class="si">{</span><span class="n">new_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="c1"># oldリストの0番目の要素(id:2644984767616)：[1, 2, 3]</span>
+<span class="c1"># newリストの0番目の要素(id:2644984755136)：[1, 2, 3]</span>
+</pre></div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -17122,6 +17239,7 @@ $</p>
 <li><a href="#尺取り法">尺取り法</a></li>
 <li><a href="#最小共通祖先">最小共通祖先(Lowest Common Ancestor)</a></li>
 <li><a href="#最小費用流問題">最小費用流問題</a></li>
+<li><a href="#三分探索">三分探索</a></li>
 </ol>
 
 </div>
@@ -17486,50 +17604,9 @@ $</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;最後のTrueのインデックスを返す&quot;&quot;&quot;</span>
+<span class="k">def</span> <span class="nf">judge</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="c1"># 答えがこのような並びで境界があるとする。　[True, True, True, True, True, False, False, False]</span>
-    <span class="k">return</span> <span class="kc">True</span>
-    <span class="k">return</span> <span class="kc">False</span>
-
-<span class="c1"># 答えを小数で求める場合</span>
-<span class="k">def</span> <span class="nf">bin_search</span><span class="p">()</span>
-    <span class="n">X_ok</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">X_ng</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">**</span> <span class="mi">10</span>
-    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span> <span class="c1"># or while X_ng - X_ok &gt;= 0.001:</span>
-        <span class="n">X</span> <span class="o">=</span> <span class="p">(</span><span class="n">X_ok</span> <span class="o">+</span> <span class="n">X_ng</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
-        <span class="k">if</span> <span class="n">check</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
-            <span class="n">X_ok</span> <span class="o">=</span> <span class="n">X</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">X_ng</span> <span class="o">=</span> <span class="n">X</span>
-    <span class="k">return</span> <span class="n">X_ok</span>
-
-<span class="c1"># 答えを整数で求める場合</span>
-<span class="k">def</span> <span class="nf">bin_search</span><span class="p">()</span>
-    <span class="n">X_ok</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">X_ng</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">**</span> <span class="mi">10</span>
-    <span class="k">while</span> <span class="n">X_ng</span> <span class="o">-</span> <span class="n">X_ok</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="n">X</span> <span class="o">=</span> <span class="p">(</span><span class="n">X_ok</span> <span class="o">+</span> <span class="n">X_ng</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
-        <span class="k">if</span> <span class="n">check</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
-            <span class="n">X_ok</span> <span class="o">=</span> <span class="n">X</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">X_ng</span> <span class="o">=</span> <span class="n">X</span>
-    <span class="k">return</span> <span class="n">X_ok</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">judge</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="kc">True</span>
     <span class="k">return</span> <span class="kc">False</span>
     
@@ -17540,21 +17617,48 @@ $</p>
             <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">right</span> <span class="o">=</span> <span class="n">mid</span>
-    <span class="k">return</span> <span class="n">left</span>
+    <span class="k">return</span> <span class="n">left</span> <span class="c1"># 最後のTrueのインデックスを返す</span>
+<span class="c1">####################################################################################################</span>
+<span class="sd">&quot;&quot;&quot;最初のTrueのインデックスを返す&quot;&quot;&quot;</span>
+<span class="k">def</span> <span class="nf">judge</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="c1"># 答えがこのような並びで境界があるとする。　[False, False, False, False, True, True, True]</span>
+    <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="kc">False</span>
+    
+<span class="k">def</span> <span class="nf">bin_search</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">right</span> <span class="o">-</span> <span class="n">left</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">left</span> <span class="o">+</span> <span class="n">right</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">judge</span><span class="p">(</span><span class="n">mid</span><span class="p">):</span> <span class="c1"># func() 判定用関数</span>
+            <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">right</span> <span class="o">=</span> <span class="n">mid</span>
+    <span class="k">return</span> <span class="n">left</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># 最初のTrueのインデックスを返す</span>
 <span class="c1">####################################################################################################</span>
 <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span>
+    <span class="k">return</span> <span class="n">y</span>
+    <span class="ow">or</span>
+    <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="kc">True</span>
 
-<span class="k">def</span> <span class="nf">bin_search</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="n">r</span><span class="p">):</span>
-    <span class="k">while</span> <span class="n">r</span><span class="o">-</span><span class="n">l</span> <span class="o">&gt;=</span> <span class="mf">0.001</span><span class="p">:</span>
-        <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">l</span> <span class="o">+</span> <span class="n">r</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="k">def</span> <span class="nf">bin_search</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">error</span><span class="o">=</span><span class="mf">0.000001</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">right</span><span class="o">-</span><span class="n">left</span> <span class="o">&gt;=</span> <span class="n">error</span><span class="p">:</span> <span class="c1"># or for _ in range(100):</span>
+        <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">left</span> <span class="o">+</span> <span class="n">right</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
         <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">mid</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">:</span>
-            <span class="n">l</span> <span class="o">=</span> <span class="n">mid</span>
+            <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span>
         <span class="k">elif</span> <span class="n">f</span><span class="p">(</span><span class="n">mid</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">N</span><span class="p">:</span>
-            <span class="n">r</span> <span class="o">=</span> <span class="n">mid</span>
+            <span class="n">right</span> <span class="o">=</span> <span class="n">mid</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">mid</span>
-    <span class="k">return</span> <span class="n">l</span>
+    <span class="k">return</span> <span class="n">left</span>
+
+<span class="k">def</span> <span class="nf">bin_search</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">error</span><span class="o">=</span><span class="mf">0.000001</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">right</span><span class="o">-</span><span class="n">left</span> <span class="o">&gt;=</span> <span class="n">error</span><span class="p">:</span> <span class="c1"># or for _ in range(100):</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="p">(</span><span class="n">left</span> <span class="o">+</span> <span class="n">right</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+        <span class="k">if</span> <span class="n">check</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
+            <span class="n">left</span> <span class="o">=</span> <span class="n">X</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">right</span> <span class="o">=</span> <span class="n">X</span>
+    <span class="k">return</span> <span class="n">left</span>
 </pre></div>
 
      </div>
@@ -17815,7 +17919,7 @@ $</p>
 <li><a href="#巡回セールスマン問題">巡回セールスマン問題</a></li>
 <li><a href="#遷移式の工夫">遷移式の工夫</a></li>
 <li><a href="#ビットDP">ビットDP</a></li>
-<li><a href="#最長増加部分列問題">最長増加部分列問題</a></li>
+<li><a href="#最長増加部分列問題">最長増加部分列問題(LIS: Longest Increase Subsequence)</a></li>
 <li><a href="#木DP">木DP</a></li>
 <li><a href="#K以下の整数を走査するDP">K以下の整数を走査するDP</a></li>
 <li><a href="#Dの倍数を扱うDP">Dの倍数を扱うDP</a></li>
@@ -18159,7 +18263,7 @@ $</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="%E6%9C%80%E9%95%B7%E5%A2%97%E5%8A%A0%E9%83%A8%E5%88%86%E5%88%97%E5%95%8F%E9%A1%8C">&#26368;&#38263;&#22679;&#21152;&#37096;&#20998;&#21015;&#21839;&#38988;<a class="anchor-link" href="#%E6%9C%80%E9%95%B7%E5%A2%97%E5%8A%A0%E9%83%A8%E5%88%86%E5%88%97%E5%95%8F%E9%A1%8C">&#182;</a></h4><p><a id="最長増加部分列問題"></a></p>
+<h4 id="%E6%9C%80%E9%95%B7%E5%A2%97%E5%8A%A0%E9%83%A8%E5%88%86%E5%88%97%E5%95%8F%E9%A1%8C">&#26368;&#38263;&#22679;&#21152;&#37096;&#20998;&#21015;&#21839;&#38988;<a class="anchor-link" href="#%E6%9C%80%E9%95%B7%E5%A2%97%E5%8A%A0%E9%83%A8%E5%88%86%E5%88%97%E5%95%8F%E9%A1%8C">&#182;</a></h4><p><a id="最長増加部分列問題(LIS: Longest Increase Subsequence)"></a></p>
 <ul>
 <li><a href="https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_x">A24 - LIS</a><ul>
 <li><a href="https://atcoder.jp/contests/tessoku-book/submissions/37723534">コード</a></li>
@@ -18168,6 +18272,13 @@ $</p>
 <li>配列 $A=[A_1, A_2, \dots, A_N]$ の増加部分列とは、以下の条件をともに満たす配列 $B=[B_{p_1}, B_{p_2}, \dots, B_{p_k}]$ のことである<ul>
 <li>$p_1 &lt; p_2 &lt; \dots &lt; p_k$</li>
 <li>$B_{p_1} &lt; B_{p_2} &lt; \dots &lt; B_{p_k}$</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>例題</strong><ul>
+<li><a href="https://atcoder.jp/contests/arc126/tasks/arc126_b">ARC126B</a></li>
+<li><a href="https://atcoder.jp/contests/arc133/tasks/arc133_b">ARC133B</a></li>
 </ul>
 </li>
 </ul>
@@ -18886,6 +18997,7 @@ $</p>
 <ul>
 <li><a href="https://atcoder.jp/contests/past202109-open/tasks/past202109_j">J - 数列の反転</a></li>
 <li><a href="https://atcoder.jp/contests/abc217/tasks/abc217_d">ABC217D</a></li>
+<li><a href="https://atcoder.jp/contests/abc309/tasks/abc309_f">ABC309F</a></li>
 </ul>
 
 </div>
@@ -19725,11 +19837,11 @@ $</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
-
+<span class="c1"># 0-indexed で実装</span>
 <span class="k">class</span> <span class="nc">UnionFind</span><span class="p">():</span>
     <span class="c1">#はじめに頂点数n,辺の数0の無向グラフを定義</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
@@ -19802,6 +19914,11 @@ $</p>
 <li><a href="https://atcoder.jp/contests/abc231/tasks/abc231_d">ABC231D</a></li>
 <li><a href="https://atcoder.jp/contests/abc288/tasks/abc288_c">ABC288C</a></li>
 <li><a href="https://atcoder.jp/contests/arc106/tasks/arc106_b">ARC106B</a></li>
+<li><a href="https://atcoder.jp/contests/abc264/tasks/abc264_e">ABC264E</a><ul>
+<li>根に重みをもたせるように改良</li>
+<li><a href="https://atcoder.jp/contests/abc264/submissions/43058994">コード</a></li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -20951,7 +21068,8 @@ $</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>C++のstd::setをPythonで実装</li>
-<li><a href="https://qiita.com/tatyam/items/492c70ac4c955c055602">参考サイト</a></li>
+<li><a href="https://qiita.com/tatyam/items/492c70ac4c955c055602">参考サイト1</a></li>
+<li><a href="https://speakerdeck.com/tatyam_prime/python-dezui-qiang-falseping-heng-er-fen-tan-suo-mu-wozuo-ru?slide=7">参考サイト2</a></li>
 <li><a href="https://github.com/tatyam-prime/SortedSet">コードはこちら</a></li>
 </ul>
 
@@ -20965,7 +21083,100 @@ $</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="SortedSet">SortedSet<a class="anchor-link" href="#SortedSet">&#182;</a></h4>
+<ul>
+<li><p><strong><a href="#SortedSet">SortedSet</a></strong></p>
+<ul>
+<li><code>s = SortedSet(a=[])</code><ul>
+<li>iterable から SortedSet を作る．重複がなく，かつソートされていれば $O(N)$．そうでなければ $O(N\log N)$．</li>
+</ul>
+</li>
+<li><code>s.a</code><ul>
+<li>SortedSet の中身です。<code>list</code> の <code>list</code> になっていて、中には要素が昇順に並んでいます。各バケットには要素が存在することが保証されます。</li>
+</ul>
+</li>
+<li><code>len(s)</code><ul>
+<li>$O(1)$</li>
+</ul>
+</li>
+<li><code>x in s</code> / <code>x not in s</code><ul>
+<li>$O(\sqrt{N})$</li>
+</ul>
+</li>
+<li><code>iter(s)</code> / <code>for _ in s</code><ul>
+<li>要素を昇順に走査するイテレータ．操作の途中で要素の追加/削除をしてはいけない．</li>
+</ul>
+</li>
+<li><code>reversed(s)</code><ul>
+<li>要素を降順に操作するイテレータ．操作の途中で要素の追加/削除をしてはいけない．</li>
+</ul>
+</li>
+<li><code>s.add(x)</code><ul>
+<li><code>x</code> が <code>s</code> に含まれていなければ <code>x</code> を追加し，<code>True</code> を返す．含まれている場合は <code>False</code> を返す．</li>
+</ul>
+</li>
+<li><code>s.discard(x)</code><ul>
+<li><code>x</code> が <code>s</code> に含まれていれば <code>x</code> を削除し， <code>True</code> を返す．含まれていない場合は <code>False</code> を返す．</li>
+</ul>
+</li>
+<li><code>s.lt(x)</code> / <code>s.le(x)</code> / <code>s.gt(x)</code> / <code>s.ge(x)</code><ul>
+<li><code>x</code> より小さい/以下/より大きい/以上で，最大/最小の要素を返す．そのような要素が存在しなければ <code>None</code> を返す．償却$O(\sqrt{N})$</li>
+</ul>
+</li>
+<li><code>s[i]</code><ul>
+<li>下から <code>i</code> 番目/上から <code>~i</code>番目の要素を返す．存在しない場合は <code>IndexError</code> を返す．<code>abs(i)</code> が小さいと高速に動作する．$O(\frac{|i|}{\sqrt{N}})$ </li>
+</ul>
+</li>
+<li><code>s.pop(i)</code><ul>
+<li>下から <code>i</code> 番目/上から <code>~i</code> 番目の要素を削除するとともにその値を返す．存在しない場合は <code>IndexError</code> を返す．<code>abs(i)</code> が小さいと高速に動作する．$O(\frac{|i|}{\sqrt{N}})$</li>
+</ul>
+</li>
+<li><code>s.index(x)</code><ul>
+<li><code>x</code> より小さい要素の数を返す．<code>x</code> が <code>s</code> に含まれている場合は <code>list(s).index(x)</code> に相当する．$O(\sqrt{N})$</li>
+</ul>
+</li>
+<li><code>s.index_right(x)</code><ul>
+<li><code>x</code> 以下の要素の数を返す．$O(\sqrt{N})$</li>
+</ul>
+</li>
+<li><code>s == t</code> / <code>s != t</code><ul>
+<li>集合として同一かどうかを判定．$O(\sqrt{N})$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong><a href="#SortedMultiset">SortedMultiset</a></strong></p>
+<ul>
+<li><p>SortedSet の多重集合版．同じ要素を複数入れることができる．<a href="#SortedSet">SortedSet</a>空の変更点は以下の通り．</p>
+</li>
+<li><p><code>s.add(x)</code></p>
+<ul>
+<li><code>x</code> が <code>s</code> に含まれているかどうかに関わらず <code>x</code> を追加する．償却 $O(\sqrt(N))$</li>
+</ul>
+</li>
+<li><code>s.discard(x)</code><ul>
+<li><code>x</code> が <code>s</code> に含まれていれば <code>x</code> を1個削除し，<code>True</code> を返す．含まれていない場合は <code>False</code> を返す．償却 $O(\sqrt(N))$</li>
+</ul>
+</li>
+<li><code>s.count(x)</code><ul>
+<li><code>s</code> に含まれる <code>x</code> の個数を返す．$O(\sqrt(N))$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="SortedSet">SortedSet<a class="anchor-link" href="#SortedSet">&#182;</a></h4><p><a id="SortedSet"></a></p>
+
 </div>
 </div>
 </div>
@@ -20974,29 +21185,30 @@ $</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># https://github.com/tatyam-prime/SortedSet/blob/main/SortedSet.py</span>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">from</span> <span class="nn">bisect</span> <span class="kn">import</span> <span class="n">bisect_left</span><span class="p">,</span> <span class="n">bisect_right</span>
-<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Generic</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Iterator</span><span class="p">,</span> <span class="n">TypeVar</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">List</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Generic</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Iterator</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">TypeVar</span><span class="p">,</span> <span class="n">Optional</span>
 <span class="n">T</span> <span class="o">=</span> <span class="n">TypeVar</span><span class="p">(</span><span class="s1">&#39;T&#39;</span><span class="p">)</span>
 
 <span class="k">class</span> <span class="nc">SortedSet</span><span class="p">(</span><span class="n">Generic</span><span class="p">[</span><span class="n">T</span><span class="p">]):</span>
     <span class="n">BUCKET_RATIO</span> <span class="o">=</span> <span class="mi">50</span>
     <span class="n">REBUILD_RATIO</span> <span class="o">=</span> <span class="mi">170</span>
 
-    <span class="k">def</span> <span class="nf">_build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">_build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">T</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="s2">&quot;Evenly divide `a` into buckets.&quot;</span>
         <span class="k">if</span> <span class="n">a</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-        <span class="n">size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+        <span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
         <span class="n">bucket_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">size</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">BUCKET_RATIO</span><span class="p">)))</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">[</span><span class="n">size</span> <span class="o">*</span> <span class="n">i</span> <span class="o">//</span> <span class="n">bucket_size</span> <span class="p">:</span> <span class="n">size</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">bucket_size</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">bucket_size</span><span class="p">)]</span>
     
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">T</span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="s2">&quot;Make a new SortedSet from iterable. / O(N) if sorted and unique / O(N log N)&quot;</span>
         <span class="n">a</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)):</span>
             <span class="n">a</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_build</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
@@ -21009,6 +21221,9 @@ $</p>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">):</span>
             <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">i</span><span class="p">):</span> <span class="k">yield</span> <span class="n">j</span>
     
+    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+    
     <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span>
     
@@ -21019,16 +21234,15 @@ $</p>
         <span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
         <span class="k">return</span> <span class="s2">&quot;{&quot;</span> <span class="o">+</span> <span class="n">s</span><span class="p">[</span><span class="mi">1</span> <span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;}&quot;</span>
 
-    <span class="k">def</span> <span class="nf">_find_bucket</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">T</span><span class="p">]:</span>
-        <span class="s2">&quot;Find the bucket which should contain x. self must not be empty.&quot;</span>
+    <span class="k">def</span> <span class="nf">_position</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">T</span><span class="p">],</span> <span class="nb">int</span><span class="p">]:</span>
+        <span class="s2">&quot;Find the bucket and position which x should be inserted. self must not be empty.&quot;</span>
         <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span> <span class="k">return</span> <span class="n">a</span>
-        <span class="k">return</span> <span class="n">a</span>
+            <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span> <span class="k">break</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">bisect_left</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
 
     <span class="k">def</span> <span class="fm">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="kc">False</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_bucket</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="n">i</span> <span class="o">=</span> <span class="n">bisect_left</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_position</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">i</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="ow">and</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span>
 
     <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
@@ -21037,57 +21251,78 @@ $</p>
             <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="p">[[</span><span class="n">x</span><span class="p">]]</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="mi">1</span>
             <span class="k">return</span> <span class="kc">True</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_bucket</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="n">i</span> <span class="o">=</span> <span class="n">bisect_left</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_position</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="ow">and</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span> <span class="k">return</span> <span class="kc">False</span>
         <span class="n">a</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">REBUILD_RATIO</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_build</span><span class="p">()</span>
         <span class="k">return</span> <span class="kc">True</span>
+    
+    <span class="k">def</span> <span class="nf">_pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">T</span><span class="p">],</span> <span class="n">i</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">T</span><span class="p">:</span>
+        <span class="n">ans</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">-=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">a</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_build</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">ans</span>
 
     <span class="k">def</span> <span class="nf">discard</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
         <span class="s2">&quot;Remove an element and return True if removed. / O(√N)&quot;</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="kc">False</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_bucket</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="n">i</span> <span class="o">=</span> <span class="n">bisect_left</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_position</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="ow">or</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">x</span><span class="p">:</span> <span class="k">return</span> <span class="kc">False</span>
-        <span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">-=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_build</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pop</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
         <span class="k">return</span> <span class="kc">True</span>
     
     <span class="k">def</span> <span class="nf">lt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">T</span><span class="p">]:</span>
         <span class="s2">&quot;Find the largest element &lt; x, or None if it doesn&#39;t exist.&quot;</span>
+        <span class="s2">&quot;xより小さい値の中で最大の値を返す．なければNoneを返す．&quot;</span>
         <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">bisect_left</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
 
     <span class="k">def</span> <span class="nf">le</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">T</span><span class="p">]:</span>
         <span class="s2">&quot;Find the largest element &lt;= x, or None if it doesn&#39;t exist.&quot;</span>
+        <span class="s2">&quot;x以下の値の中で最大の値を返す．なければNoneを返す．&quot;</span>
         <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">x</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">bisect_right</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
 
     <span class="k">def</span> <span class="nf">gt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">T</span><span class="p">]:</span>
         <span class="s2">&quot;Find the smallest element &gt; x, or None if it doesn&#39;t exist.&quot;</span>
+        <span class="s2">&quot;xより大きい値の中で最小の値を返す．なければNoneを返す．&quot;</span>
         <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">x</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">bisect_right</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">)]</span>
 
     <span class="k">def</span> <span class="nf">ge</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">T</span><span class="p">]:</span>
         <span class="s2">&quot;Find the smallest element &gt;= x, or None if it doesn&#39;t exist.&quot;</span>
+        <span class="s2">&quot;x以上の値の中で最小の値を返す．なければNoneを返す．&quot;</span>
         <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">x</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">bisect_left</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">)]</span>
     
-    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">T</span><span class="p">:</span>
-        <span class="s2">&quot;Return the x-th element, or IndexError if it doesn&#39;t exist.&quot;</span>
-        <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span> <span class="n">x</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span>
-        <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span> <span class="k">raise</span> <span class="ne">IndexError</span>
-        <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">):</span> <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
-            <span class="n">x</span> <span class="o">-=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">T</span><span class="p">:</span>
+        <span class="s2">&quot;Return the i-th element.&quot;</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">):</span>
+                <span class="n">i</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">):</span> <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="n">i</span> <span class="o">-=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">IndexError</span>
+    
+    <span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">T</span><span class="p">:</span>
+        <span class="s2">&quot;Pop and return the i-th element.&quot;</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">):</span>
+                <span class="n">i</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pop</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">):</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pop</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+                <span class="n">i</span> <span class="o">-=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
         <span class="k">raise</span> <span class="ne">IndexError</span>
     
     <span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
@@ -21121,7 +21356,8 @@ $</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="SortedMultiset">SortedMultiset<a class="anchor-link" href="#SortedMultiset">&#182;</a></h4>
+<h4 id="SortedMultiset">SortedMultiset<a class="anchor-link" href="#SortedMultiset">&#182;</a></h4><p><a id="SortedMultiset"></a></p>
+
 </div>
 </div>
 </div>
@@ -21135,24 +21371,25 @@ $</p>
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># https://github.com/tatyam-prime/SortedSet/blob/main/SortedMultiset.py</span>
 <span class="kn">import</span> <span class="nn">math</span>
-<span class="kn">from</span> <span class="nn">bisect</span> <span class="kn">import</span> <span class="n">bisect_left</span><span class="p">,</span> <span class="n">bisect_right</span><span class="p">,</span> <span class="n">insort</span>
-<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Generic</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Iterator</span><span class="p">,</span> <span class="n">TypeVar</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">List</span>
+<span class="kn">from</span> <span class="nn">bisect</span> <span class="kn">import</span> <span class="n">bisect_left</span><span class="p">,</span> <span class="n">bisect_right</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Generic</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Iterator</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">TypeVar</span><span class="p">,</span> <span class="n">Optional</span>
 <span class="n">T</span> <span class="o">=</span> <span class="n">TypeVar</span><span class="p">(</span><span class="s1">&#39;T&#39;</span><span class="p">)</span>
 
 <span class="k">class</span> <span class="nc">SortedMultiset</span><span class="p">(</span><span class="n">Generic</span><span class="p">[</span><span class="n">T</span><span class="p">]):</span>
     <span class="n">BUCKET_RATIO</span> <span class="o">=</span> <span class="mi">50</span>
     <span class="n">REBUILD_RATIO</span> <span class="o">=</span> <span class="mi">170</span>
 
-    <span class="k">def</span> <span class="nf">_build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">_build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">T</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="s2">&quot;Evenly divide `a` into buckets.&quot;</span>
         <span class="k">if</span> <span class="n">a</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-        <span class="n">size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+        <span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
         <span class="n">bucket_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">size</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">BUCKET_RATIO</span><span class="p">)))</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">[</span><span class="n">size</span> <span class="o">*</span> <span class="n">i</span> <span class="o">//</span> <span class="n">bucket_size</span> <span class="p">:</span> <span class="n">size</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">bucket_size</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">bucket_size</span><span class="p">)]</span>
     
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">T</span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="s2">&quot;Make a new SortedMultiset from iterable. / O(N) if sorted / O(N log N)&quot;</span>
         <span class="n">a</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)):</span>
             <span class="n">a</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_build</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
@@ -21165,6 +21402,9 @@ $</p>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">):</span>
             <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">i</span><span class="p">):</span> <span class="k">yield</span> <span class="n">j</span>
     
+    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+    
     <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span>
     
@@ -21175,16 +21415,15 @@ $</p>
         <span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
         <span class="k">return</span> <span class="s2">&quot;{&quot;</span> <span class="o">+</span> <span class="n">s</span><span class="p">[</span><span class="mi">1</span> <span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;}&quot;</span>
 
-    <span class="k">def</span> <span class="nf">_find_bucket</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">T</span><span class="p">]:</span>
-        <span class="s2">&quot;Find the bucket which should contain x. self must not be empty.&quot;</span>
+    <span class="k">def</span> <span class="nf">_position</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">T</span><span class="p">],</span> <span class="nb">int</span><span class="p">]:</span>
+        <span class="s2">&quot;Find the bucket and position which x should be inserted. self must not be empty.&quot;</span>
         <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span> <span class="k">return</span> <span class="n">a</span>
-        <span class="k">return</span> <span class="n">a</span>
+            <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span> <span class="k">break</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">bisect_left</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
 
     <span class="k">def</span> <span class="fm">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="kc">False</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_bucket</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="n">i</span> <span class="o">=</span> <span class="n">bisect_left</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_position</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">i</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="ow">and</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span>
 
     <span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
@@ -21197,54 +21436,76 @@ $</p>
             <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="p">[[</span><span class="n">x</span><span class="p">]]</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="mi">1</span>
             <span class="k">return</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_bucket</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="n">insort</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_position</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">a</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">REBUILD_RATIO</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_build</span><span class="p">()</span>
+    
+    <span class="k">def</span> <span class="nf">_pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">T</span><span class="p">],</span> <span class="n">i</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">T</span><span class="p">:</span>
+        <span class="n">ans</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">-=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">a</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_build</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">ans</span>
 
     <span class="k">def</span> <span class="nf">discard</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
         <span class="s2">&quot;Remove an element and return True if removed. / O(√N)&quot;</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="kc">False</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_bucket</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="n">i</span> <span class="o">=</span> <span class="n">bisect_left</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_position</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="ow">or</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">x</span><span class="p">:</span> <span class="k">return</span> <span class="kc">False</span>
-        <span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">-=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_build</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pop</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
         <span class="k">return</span> <span class="kc">True</span>
 
     <span class="k">def</span> <span class="nf">lt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">T</span><span class="p">]:</span>
         <span class="s2">&quot;Find the largest element &lt; x, or None if it doesn&#39;t exist.&quot;</span>
+        <span class="s2">&quot;xより小さい値の中で最大の値を返す．なければNoneを返す．&quot;</span>
         <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">bisect_left</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
 
     <span class="k">def</span> <span class="nf">le</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">T</span><span class="p">]:</span>
         <span class="s2">&quot;Find the largest element &lt;= x, or None if it doesn&#39;t exist.&quot;</span>
+        <span class="s2">&quot;x以下の値の中で最大の値を返す．なければNoneを返す．&quot;</span>
         <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">x</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">bisect_right</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
 
     <span class="k">def</span> <span class="nf">gt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">T</span><span class="p">]:</span>
         <span class="s2">&quot;Find the smallest element &gt; x, or None if it doesn&#39;t exist.&quot;</span>
+        <span class="s2">&quot;xより大きい値の中で最小の値を返す．なければNoneを返す．&quot;</span>
         <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">x</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">bisect_right</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">)]</span>
 
     <span class="k">def</span> <span class="nf">ge</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">T</span><span class="p">]:</span>
         <span class="s2">&quot;Find the smallest element &gt;= x, or None if it doesn&#39;t exist.&quot;</span>
+        <span class="s2">&quot;x以上の値の中で最小の値を返す．なければNoneを返す．&quot;</span>
         <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">x</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">bisect_left</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">)]</span>
     
-    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">T</span><span class="p">:</span>
-        <span class="s2">&quot;Return the x-th element, or IndexError if it doesn&#39;t exist.&quot;</span>
-        <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span> <span class="n">x</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span>
-        <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span> <span class="k">raise</span> <span class="ne">IndexError</span>
-        <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">):</span> <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
-            <span class="n">x</span> <span class="o">-=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">T</span><span class="p">:</span>
+        <span class="s2">&quot;Return the i-th element.&quot;</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">):</span>
+                <span class="n">i</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">):</span> <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="n">i</span> <span class="o">-=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">IndexError</span>
+    
+    <span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">T</span><span class="p">:</span>
+        <span class="s2">&quot;Pop and return the i-th element.&quot;</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">):</span>
+                <span class="n">i</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pop</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">):</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pop</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+                <span class="n">i</span> <span class="o">-=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
         <span class="k">raise</span> <span class="ne">IndexError</span>
 
     <span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
@@ -21282,6 +21543,7 @@ $</p>
 <ul>
 <li><a href="https://atcoder.jp/contests/abc217/tasks/abc217_d">ABC217D</a></li>
 <li><a href="https://atcoder.jp/contests/abc281/tasks/abc281_e">ABC281E</a></li>
+<li><a href="https://atcoder.jp/contests/abc308/tasks/abc308_f">ABC308F</a></li>
 </ul>
 
 </div>
@@ -21824,6 +22086,65 @@ $</p>
 </div>
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="30.-%E4%B8%89%E5%88%86%E6%8E%A2%E7%B4%A2">30. &#19977;&#20998;&#25506;&#32034;<a class="anchor-link" href="#30.-%E4%B8%89%E5%88%86%E6%8E%A2%E7%B4%A2">&#182;</a></h3><p><a id="三分探索"></a></p>
+<ul>
+<li>ただ一つの極値を持つ関数 $f$ における極値を効率的に探索できる．</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+  <span class="n">y</span> <span class="o">=</span> 
+  <span class="k">return</span> <span class="n">y</span>
+
+<span class="c1"># 三分探索</span>
+<span class="k">def</span> <span class="nf">ternary_search</span><span class="p">(</span><span class="n">left</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">10</span><span class="p">,</span> <span class="n">error</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">)):</span>
+  <span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">right</span><span class="o">-</span><span class="n">left</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">error</span><span class="p">:</span>
+    <span class="n">c1</span> <span class="o">=</span> <span class="n">left</span> <span class="o">+</span> <span class="p">((</span><span class="n">right</span> <span class="o">-</span> <span class="n">left</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">))</span>
+    <span class="n">c2</span> <span class="o">=</span> <span class="n">left</span> <span class="o">+</span> <span class="p">((</span><span class="n">right</span> <span class="o">-</span> <span class="n">left</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">check</span><span class="p">(</span><span class="n">c1</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">check</span><span class="p">(</span><span class="n">c2</span><span class="p">):</span>
+      <span class="n">right</span> <span class="o">=</span> <span class="n">c2</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="n">left</span> <span class="o">=</span> <span class="n">c1</span>
+  <span class="k">return</span> <span class="n">left</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>例題</strong></p>
+<ul>
+<li><a href="https://atcoder.jp/contests/arc122/tasks/arc122_b">ARC122</a></li>
+</ul>
+
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
