@@ -16152,9 +16152,9 @@ B upper
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>$H$ 行 $W$ 列のマス目において，その座標 $(h, w)$ を 通し番号で表現<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hw2p</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
-<span class="k">return</span> <span class="n">h</span><span class="o">*</span><span class="n">W</span> <span class="o">+</span> <span class="n">w</span>
+  <span class="k">return</span> <span class="n">h</span><span class="o">*</span><span class="n">W</span> <span class="o">+</span> <span class="n">w</span>
 <span class="k">def</span> <span class="nf">p2hw</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
-<span class="k">return</span> <span class="n">p</span><span class="o">//</span><span class="n">W</span><span class="p">,</span> <span class="n">p</span><span class="o">%</span><span class="n">W</span>
+  <span class="k">return</span> <span class="n">p</span><span class="o">//</span><span class="n">W</span><span class="p">,</span> <span class="n">p</span><span class="o">%</span><span class="n">W</span>
 </pre></div>
 </li>
 </ul>
@@ -16557,6 +16557,143 @@ $$S \equiv D\ (\mathrm{mod}\ 2)$$</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><code>Decimal</code>モジュール<ul>
+<li>10進数の計算を厳密に行うことができる．</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">999990000000010</span><span class="p">,</span> <span class="mf">9.90</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">decimal</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">decimal</span><span class="o">.</span><span class="n">Decimal</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">*</span><span class="n">decimal</span><span class="o">.</span><span class="n">Decimal</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"9899901000000099 &lt;&lt; 正しい計算結果"</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>9899901000000100.0
+9899901000000099.355267815166
+9899901000000099 &lt;&lt; 正しい計算結果
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>$1 \leq A_1 \leq A_2 \leq  \dots \leq A_10 \leq 10$ の条件を満たす A の数は以下のとおりである．<ul>
+<li><a href="https://atcoder.jp/contests/abc165/tasks/abc165_c">例題</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">M</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">T</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">dfs</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">cnt</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">==</span> <span class="n">M</span><span class="p">:</span>
+        <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">T</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="nb">tuple</span><span class="p">(</span><span class="n">l</span><span class="p">))</span>
+        <span class="k">return</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+            <span class="n">dfs</span><span class="p">(</span><span class="n">l</span> <span class="o">+</span> <span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="n">dfs</span><span class="p">([])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>92378
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
 
 </div>
@@ -16578,7 +16715,7 @@ $$S \equiv D\ (\mathrm{mod}\ 2)$$</li>
 <li><a href="#階乗、組み合わせ">階乗、組み合わせ</a></li>
 <li><a href="#繰り返し二乗法">繰り返し二乗法</a></li>
 <li><a href="#余りの計算">余りの計算</a></li>
-<li><a href="#余りの計算(割り算">余りの計算(割り算)</a>)</li>
+<li><a href="#余りの計算（割り算）">余りの計算（割り算）</a></li>
 <li><a href="#行列計算">行列計算</a>  </li>
 <li><a href="#三角形の計算">三角形の計算</a>  </li>
 <li><a href="#円公差判定">円公差判定</a>  </li>
@@ -16592,6 +16729,9 @@ $$S \equiv D\ (\mathrm{mod}\ 2)$$</li>
 <li><a href="#進数変換">進数変換</a></li>
 <li><a href="#偏角">偏角</a></li>
 <li><a href="#包除原理">包除原理</a></li>
+<li><a href="#逆元">逆元</a></li>
+<li><a href="#$Ax \equiv B \mod M$となる最小の$x$">$Ax \equiv B \mod M$となる最小の$x$</a></li>
+<li><a href="#アフィン変換">アフィン変換</a></li>
 </ol>
 
 </div>
@@ -17300,7 +17440,7 @@ $</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="8.-%E4%BD%99%E3%82%8A%E3%81%AE%E8%A8%88%E7%AE%97(%E5%89%B2%E3%82%8A%E7%AE%97)">8. &#20313;&#12426;&#12398;&#35336;&#31639;(&#21106;&#12426;&#31639;)<a class="anchor-link" href="#8.-%E4%BD%99%E3%82%8A%E3%81%AE%E8%A8%88%E7%AE%97(%E5%89%B2%E3%82%8A%E7%AE%97)">&#182;</a></h3><p><a id="余りの計算(割り算)"></a>
+<h3 id="8.-%E4%BD%99%E3%82%8A%E3%81%AE%E8%A8%88%E7%AE%97%EF%BC%88%E5%89%B2%E3%82%8A%E7%AE%97%EF%BC%89">8. &#20313;&#12426;&#12398;&#35336;&#31639;&#65288;&#21106;&#12426;&#31639;&#65289;<a class="anchor-link" href="#8.-%E4%BD%99%E3%82%8A%E3%81%AE%E8%A8%88%E7%AE%97%EF%BC%88%E5%89%B2%E3%82%8A%E7%AE%97%EF%BC%89">&#182;</a></h3><p><a id="余りの計算（割り算）"></a>
 鉄則本 p.173</p>
 
 </div>
@@ -18390,6 +18530,122 @@ $$(x_1の期待値) + (x_2の期待値) + \dots + (x_nの期待値) = (x_1 + x_2
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><a href="https://atcoder.jp/contests/typical90/tasks/typical90_cb">080 - Let's Share Bit（★6）</a></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="22.-%E9%80%86%E5%85%83">22. &#36870;&#20803;<a class="anchor-link" href="#22.-%E9%80%86%E5%85%83">&#182;</a></h3><p><a id="逆元"></a></p>
+<ul>
+<li>拡張ユークリッド</li>
+<li><a href="https://qiita.com/sesame0224/items/f2ac77c367f588c0d29d">解説記事</a></li>
+</ul>
+<div class="highlight"><pre><span></span><span class="c1"># mod m における a の逆元</span>
+<span class="k">def</span> <span class="nf">modinv</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
+  <span class="n">b</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">m</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+  <span class="k">while</span> <span class="n">b</span><span class="p">:</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">a</span> <span class="o">//</span> <span class="n">b</span>
+    <span class="n">a</span> <span class="o">-=</span> <span class="n">t</span> <span class="o">*</span> <span class="n">b</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span>
+    <span class="n">u</span> <span class="o">-=</span> <span class="n">t</span> <span class="o">*</span> <span class="n">v</span>
+    <span class="n">u</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">v</span><span class="p">,</span> <span class="n">u</span>
+
+  <span class="n">u</span> <span class="o">%=</span> <span class="n">m</span>
+  <span class="k">if</span> <span class="n">u</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">u</span> <span class="o">+=</span> <span class="n">m</span>
+  <span class="k">return</span> <span class="n">u</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="23.-$Ax-%5Cequiv-B-%5Cmod-M$%E3%81%A8%E3%81%AA%E3%82%8B%E6%9C%80%E5%B0%8F%E3%81%AE$x$">23. $Ax \equiv B \mod M$&#12392;&#12394;&#12427;&#26368;&#23567;&#12398;$x$<a class="anchor-link" href="#23.-$Ax-%5Cequiv-B-%5Cmod-M$%E3%81%A8%E3%81%AA%E3%82%8B%E6%9C%80%E5%B0%8F%E3%81%AE$x$">&#182;</a></h3><p><a id="$Ax \equiv B \mod M$となる最小の$x$"></a></p>
+<ul>
+<li><a href="https://atcoder.jp/contests/abc186/tasks/abc186_e">例題</a><ul>
+<li><a href="https://atcoder.jp/contests/abc186/editorial/401">解説</a></li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>$d = \gcd(A, B, M)$ とし，$A,B,M$ をそれぞれ $A//d,B//d,M//d$ に置き換える．</li>
+<li>$\gcd(A, M) \ne 1$ のとき解なし</li>
+<li>$\gcd(A, M) = 1$ のとき，$\mod M$ における $A$ の<a href="#逆元">逆元</a>を $A^{-1}$ として，$x = A^{-1}B$ が解</li>
+</ol>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="24.-%E3%82%A2%E3%83%95%E3%82%A3%E3%83%B3%E5%A4%89%E6%8F%9B">24. &#12450;&#12501;&#12451;&#12531;&#22793;&#25563;<a class="anchor-link" href="#24.-%E3%82%A2%E3%83%95%E3%82%A3%E3%83%B3%E5%A4%89%E6%8F%9B">&#182;</a></h3><p><a id="アフィン変換"></a></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><a href="https://atcoder.jp/contests/abc189/tasks/abc189_e">例題</a></li>
+</ul>
 
 </div>
 </div>
@@ -20249,6 +20505,7 @@ $$(x_1の期待値) + (x_2の期待値) + \dots + (x_nの期待値) = (x_1 + x_2
 <li><a href="https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_be">A57 - Doubling</a></li>
 <li><a href="https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ed">B57 - Calculator</a></li>
 <li><a href="https://atcoder.jp/contests/abc241/tasks/abc241_e">ABC241E</a></li>
+<li><a href="https://atcoder.jp/contests/abc169/tasks/abc169_d">ABC169D</a></li>
 </ul>
 
 </div>
@@ -21195,6 +21452,11 @@ $$(x_1の期待値) + (x_2の期待値) + \dots + (x_nの期待値) = (x_1 + x_2
 </li>
 <li><a href="https://atcoder.jp/contests/typical90/tasks/typical90_bb">054 - Takahashi Number（★6）</a><ul>
 <li>上記と同じく，グラフの辺の貼り方を工夫することで辺数を削減し，高速化を実現</li>
+</ul>
+</li>
+<li><a href="https://atcoder.jp/contests/abc184/tasks/abc184_e">ABC184E</a><ul>
+<li>テレポーターからの移動を一度でも行うと，その経路を削除する</li>
+<li><a href="https://atcoder.jp/contests/abc184/submissions/49667797">コード</a> 87行目</li>
 </ul>
 </li>
 </ul>
@@ -24812,6 +25074,7 @@ Color[0] = 0</li>
 </ul>
 <ol>
 <li><a href="#不変量に注目する">不変量に注目する</a></li>
+<li><a href="#鳩ノ巣原理">鳩ノ巣原理</a></li>
 </ol>
 
 </div>
@@ -24852,6 +25115,38 @@ Color[0] = 0</li>
 <ul>
 <li><a href="https://atcoder.jp/contests/abc288/tasks/abc288_d">ABC288D</a></li>
 <li><a href="https://atcoder.jp/contests/typical90/tasks/typical90_bv">074 - ABC String 2（★6）</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="2.-%E9%B3%A9%E3%83%8E%E5%B7%A3%E5%8E%9F%E7%90%86">2. &#40169;&#12494;&#24035;&#21407;&#29702;<a class="anchor-link" href="#2.-%E9%B3%A9%E3%83%8E%E5%B7%A3%E5%8E%9F%E7%90%86">&#182;</a></h3><p><a id="鳩ノ巣原理"></a></p>
+<ul>
+<li>部屋割り論法</li>
+<li>$n+1$ 個のものを $n$ 組に分けるとき，$2$ 個以上はいっている組が少なくとも $1$ つ存在する．</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>例題</strong></p>
+<ul>
+<li><a href="https://atcoder.jp/contests/arc170/tasks/arc170_b">ARC170B</a></li>
+<li><a href="https://atcoder.jp/contests/typical90/tasks/typical90_cj">088 - Similar but Different Ways（★6）</a></li>
 </ul>
 
 </div>
